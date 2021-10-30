@@ -39,8 +39,8 @@ public class EmailService {
         mailSender.setHost("smtp.gmail.com");
         mailSender.setPort(587);
 
-        mailSender.setUsername("sysouqapp@gmail.com");
-        mailSender.setPassword("Aziz436570");
+        mailSender.setUsername("=============");
+        mailSender.setPassword("=============");
 
         Properties props = mailSender.getJavaMailProperties();
         props.put("mail.transport.protocol", "smtp");
@@ -64,7 +64,7 @@ public class EmailService {
             MimeMessage mimeMessage = getJavaMailSender().createMimeMessage();
             MimeMessageHelper message = new MimeMessageHelper(mimeMessage,"UTF-8");
             try {
-                message.setFrom("sysouqapp@gmail.com");
+                message.setFrom("=============@gmail.com");
                 message.setTo(email);
                 message.setSubject("إعادة تعيين كلمة السر الخاص بك Sysouq");
                 String msg = "<html dir=\"rtl\" lang=\"ar\">" +
@@ -112,7 +112,7 @@ public class EmailService {
         MimeMessage mimeMessage = getJavaMailSender().createMimeMessage();
         MimeMessageHelper message = new MimeMessageHelper(mimeMessage,"UTF-8");
         try {
-            message.setFrom("sysouqapp@gmail.com");
+            message.setFrom("=============@gmail.com");
             message.setTo(user.getEmail());
             message.setSubject("تم انشاء الحساب على منصة Sysouq");
             String msg = "<html dir=\"rtl\" lang=\"ar\">" +
@@ -140,8 +140,8 @@ public class EmailService {
         MimeMessage mimeMessage = getJavaMailSender().createMimeMessage();
         MimeMessageHelper message = new MimeMessageHelper(mimeMessage,"UTF-8");
         try {
-            message.setFrom("sysouqapp@gmail.com");
-            message.setTo("azizof2@hotmail.com");
+            message.setFrom("=============@gmail.com");
+            message.setTo("=============@hotmail.com");
             message.setSubject("بلاغ من sysouq");
             String msg = "<html >" +
                     "<body> " +
